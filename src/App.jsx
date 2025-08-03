@@ -4,6 +4,8 @@ import './App.css';
 function App() {
   const [value, setValue] = useState('');
   const [result, setResult] = useState('');
+
+
   const handleClick = (buttonValue) => {
     setValue((prev) => prev + buttonValue);
   };
@@ -34,30 +36,28 @@ function App() {
 
       <div>
         <div>
-          <input type='button' className='btn' value='7' onClick={() => handleClick('7')} />
-          <input type='button' className='btn' value='8' onClick={() => handleClick('8')} />
-          <input type='button' className='btn' value='9' onClick={() => handleClick('9')} />
-          <input type='button' className='btn' value='+' onClick={() => handleClick('+')} />
+          <button className='btn'  onClick={() => handleClick('7')} >7</button>
+          <button  className='btn'  onClick={() => handleClick('8')} >8</button>
+          <button  className='btn'  onClick={() => handleClick('9')} >9</button>
+          <button  className='btn' onClick={() => handleClick('+')} >+</button>
         </div>
         <div>
-          <input type='button' className='btn' value='4' onClick={() => handleClick('4')} />
-          <input type='button' className='btn' value='5' onClick={() => handleClick('5')} />
-          <input type='button' className='btn' value='6' onClick={() => handleClick('6')} />
-          <input type='button' className='btn' value='-' onClick={() => handleClick('-')} />
+          <button  className='btn'  onClick={() => handleClick('4')} >4</button>
+          <button  className='btn'  onClick={() => handleClick('5')} >5</button>
+          <button  className='btn'  onClick={() => handleClick('6')} >6</button>
+          <button  className='btn'  onClick={() => handleClick('-')} >-</button>
         </div>
         <div>
-          <input type='button' className='btn' value='1' onClick={() => handleClick('1')} />
-          <input type='button' className='btn' value='2' onClick={() => handleClick('2')} />
-          <input type='button' className='btn' value='3' onClick={() => handleClick('3')} />
-          <input type='button' className='btn' value='*' onClick={() => handleClick('*')} />
+          <button  className='btn'  onClick={() => handleClick('1')} >1</button>
+          <button  className='btn'  onClick={() => handleClick('2')} >2</button>
+          <button  className='btn'  onClick={() => handleClick('3')} >3</button>
+          <button  className='btn'  onClick={() => handleClick('*')} >*</button>
         </div>
-        <div>
-          <input type='button' className='btn' value='c' onClick={handleClear} />
-          <input type='button' className='btn' value='0' onClick={() => handleClick('0')} />
-          <input type='button' className='btn' value='=' onClick={handleCalculate} />
-          <input type='button' className='btn' value='/' onClick={() => handleClick('/')} />
+          <button  className='btn'  onClick={handleClear} >c</button>
+         <button  className='btn'  onClick={() => handleClick('0')} >0</button>
+          <button  className='btn'  onClick={handleCalculate} >=</button>
+         <button  className='btn'  onClick={() => handleClick('/')} >/</button>
         </div>
-      </div>
     </div>
   );
 }
