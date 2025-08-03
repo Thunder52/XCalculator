@@ -12,7 +12,7 @@ function App() {
       if (value === '') {
         setResult('Error');
       } else {
-        const evalResult = eval(value); // Use math.js in real apps
+        const evalResult = eval(value); 
         setResult(evalResult);
       }
     } catch (err) {
